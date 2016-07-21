@@ -1,213 +1,122 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Teace.ca | Home</title>
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
-		
-		
-		<!-- webfonts -->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-		<!--styles -->
-  		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  		
-  		<link rel="stylesheet" type='text/css' href="css/main.css"> 	
-  		<link rel="stylesheet" type='text/css' href="css/style.css">	
+<head>
+  <title>Teace.ca</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
 
-	</head>
-	<body>
-		<!---start-header-->
-		<div class="header">
-				
-			<div class="box">
-				<div class="menu_box_list">
-					<ul>
-						<li><a href="#"><span><a href="index.html"><img src="images/logo70.png" title="logo"/></span></a></li>
-						<li><a href="#"><span>Twitter</span></a></li>
-						<li><a href="#"><span>Blog</span></a></li>
-						<li><a href="#"><span>Store</span></a></li>
-						<li><a href="contact.html"><span>Contact</span></a></li>
-						<div class="clear"> </div>
-					</ul>
-				</div>
-			</div>	
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />  
+ 
+  <!-- STYLES -->
+  <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" media="all" />
 
-		    <div class="clear"></div>
-		</div>
-		<!--//end-header-->
+  <!-- FONTS -->
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300|Hind:400,300|Cuprum|BenchNine:400,300' rel='stylesheet' type='text/css'>
 
-		<!--start-content-->
-		<div class="container">
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
 
-			<!--start-carousel-->	
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- the mousewheel plugin - optional to provide mousewheel support -->
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
 
-			    <!-- Indicators -->
-			    <ol class="carousel-indicators">
-				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>			    
-				    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-			    </ol>
-				 
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner">
+  <!-- latest jQuery direct from google's CDN -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-				    <div class="item active">
-				    	<div class="category">
-					        <h1>Books</h1>
-					        <div class="carousel-item">
-					        	<img src="images/books/risesmall.jpg" width="200">
-					        	<h3><a href="#">Rise</a></h3>
-					        	<span><a href="#"><label> </label>Book</a></span>
-					        	<p>The first in a trilogy, Rise is the story of best friends who grow up preparing for the undead apocalypse and, ultimately, come to face it twenty years later.</p>
-					        </div>
-					        <div class="clear"> </div>
-					        <div class="carousel-item">
-					      		<img src="images/books/reveriecover.jpg" width="200">
-					        	<h3><a href="#">Reverie</a></h3>
-					        	<span><a href="#"><label> </label>Book</a></span>
-					        	<p>Two strangers discover a veiled connection with one another and the intricacies of their link are revealed through the loss of a child, collapse of their marriages, lives and, ultimately, sanity. But beneath the surface there's so much more...</p>
-					        </div>
-				        </div>
+  <!-- the jScrollPane script -->
+  <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
 
-				        <div class="category">
-					        <h1>Books</h1>
-					        <div class="carousel-item">
-					        	<img src="images/books/risesmall.jpg" width="200">
-					        	<h3><a href="#">Rise</a></h3>
-					        	<span><a href="#"><label> </label>Book</a></span>
-					        	<p>The first in a trilogy, Rise is the story of best friends who grow up preparing for the undead apocalypse and, ultimately, come to face it twenty years later.</p>
-					        </div>
-					        <div class="clear"> </div>
-					        <div class="carousel-item">
-					      		<img src="images/books/reveriecover.jpg" width="200">
-					        	<h3><a href="#">Reverie</a></h3>
-					        	<span><a href="#"><label> </label>Book</a></span>
-					        	<p>Two strangers discover a veiled connection with one another and the intricacies of their link are revealed through the loss of a child, collapse of their marriages, lives and, ultimately, sanity. But beneath the surface there's so much more...</p>
-					        </div>
-				        </div>
-				    </div>
+  <!--instantiate after some browser sniffing to rule out webkit browsers for scroll effect -->
+    <script type="text/javascript" id="sourcecode">
+      $(function()
+      {
+        $('.scroll-pane').jScrollPane();
+      });
+    </script>
+</head>
 
-				    <div class="item">
-				      <h1>Shorts</h1>
-				      <div class="carousel-item">
-				        	<h3><a href="#">Love</a></h3>
-				        	<span><a href="#"><label> </label>Short</a></span>
-				        	<p>The firfdfdffd.</p>
-				      </div>
-				      <div class="carousel-item">
-				        	<h3><a href="#">Hate</a></h3>
-				        	<span><a href="#"><label> </label>Short</a></span>
-				        	<p>Two strangers discovdsfdgsre...</p>
-				      </div>
-				    </div>
+<body>
+  <div class="container"> 
 
-				</div>
-				 
-				<!-- Controls -->
-				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				    <span class="glyphicon glyphicon-chevron-left"></span>
-				</a>
-				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				    <span class="glyphicon glyphicon-chevron-right"></span>
-				</a>
-			</div><!--end-carousel-->
-		</div><!--end-container-->
+        <!-- HEADER -->
+        <div class="header">               
+                <ul class="main_list">
+                    <li>
+                      <ul>
+                        <p class="cliche"><img src="images/logo2.png" alt="cliche" /></p>
+                        <p class="teace"><a href="#"><span>Teace.ca</span></a></p>        
+                      </ul>
+                    </li>
+                    <li class="menu">
+                      <ul>
+                        <li><a href="#"><span>Twitter</span></a></li>
+                        <li><a href="#"><span>Blog</span></a></li>
+                        <li><a href="#"><span>Store</span></a></li>
+                        <li><a href="contact.html"><span>Contact</span></a></li>
+                      </ul>
+                    </li>                    
+                </ul>
+        </div>
+      
+      <!-- SCROLLING SECTION -->
+      <div class="scroll-pane horizontal-only">
+        <div class="inner">
+              <ul id="images">       
+                <li><a href="http://www.teace.ca"><img src="images/projects/blindfold/bfoldposter3.png" width="231" height="346" alt="project1" /></a></li>
+                
+                <li><a href="http://www.teace.ca"><img src="images/projects/collection/thecollectioncover3.png" width="231" height="346" alt="project2" /></a></li>
+                
+                <li><a href="https://vimeo.com/26938588"><img src="images/projects/3needs/3needs3.png" width="231" height="346" alt="project3" /></a></li>
 
+                <li><a href="https://vimeo.com/18330670"><img src="images/projects/cominghome/cominghome3.png" width="231" height="346" alt="project4" /></a></li>
+                
+                <li><a href="http://www.holdmethemovie.com/"><img src="images/projects/holdme/holdmeposter3.png" width="231" height="346" alt="project5" /></a></li>
+              
+                <li><a href="http://playreality.ca/"><img src="images/projects/playreality/playrealitycover3.png" width="231" height="346" alt="project6" /></a></li>
+              
+                <li><a href="http://www.teace.ca"><img src="images/projects/popped/poppedcover3.png" width="231" height="346" alt="project7" /></a></li>
+              
+                <li><a href="http://www.teace.ca"><img src="images/projects/reverie/reveriecover3.png" width="231" height="346" alt="project8" /></a></li>
+              
+                <li><a href="http://www.teace.ca"><img src="images/projects/rise/risecover3.png" width="231" height="346" alt="project9" /></a></li>
+              <ul>
+            </div>
+      </div>
 
+      <!-- ICONS -->
+      <div class="icons">
+      <ul>
+        <li><a href="https://twitter.com/teacesnyder"><i class="fa fa-twitter-square twitter-icon"></i></a></li>
+        <li><a href="https://vimeo.com/user5902888"><i class="fa fa-vimeo-square vimeo-icon"></i></a></li>
+        <li><a href="https://www.youtube.com/user/teacesnyder"><i class="fa fa-youtube-square youtube-icon"></i></a></li>
+        <li><a href="http://teacesnyder.blogspot.com/"><i class="fa fa-book book-icon"></i></a></li>
+      </ul>
+    </div>
 
-
-		<div class="content">
-			<div class="wrap">
-				
-				<div id="main" role="main">
-			      <ul id="tiles">
-			        <!-- These are our grid blocks -->
-			        <li onclick="location.href='single-page.html';">
-			        	<img src="images/books/risesmall.jpg" width="200">
-			        	<div class="post-info">
-			        		<div class="post-basic-info">
-				        		<h3><a href="#">Rise</a></h3>
-				        		<span><a href="#"><label> </label>Book</a></span>
-				        		<p>The first in a trilogy, Rise is the story of best friends who grow up preparing for the undead apocalypse and, ultimately, come to face it twenty years later.</p>
-			        		</div>
-			        		<div class="post-info-rate-share">
-			        			<div class="rateit">
-			        				<span> </span>
-			        			</div>
-			        			<div class="post-share">
-			        				<span> </span>
-			        			</div>
-			        			<div class="clear"> </div>
-			        		</div>
-			        	</div>
-			        </li>
-			        <li onclick="location.href='single-page.html';">
-			        	<img src="images/books/reveriecover.jpg" width="200">
-			        	<div class="post-info">
-			        		<div class="post-basic-info">
-				        		<h3><a href="#">Reverie</a></h3>
-				        		<span><a href="#"><label> </label>Book</a></span>
-				        		<p>Two strangers discover a veiled connection with one another and the intricacies of their link are revealed through the loss of a child, collapse of their marriages, lives and, ultimately, sanity. But beneath the surface there's so much more...</p>
-			        		</div>
-			        		<div class="post-info-rate-share">
-			        			<div class="rateit">
-			        				<span> </span>
-			        			</div>
-			        			<div class="post-share">
-			        				<span> </span>
-			        			</div>
-			        			<div class="clear"> </div>
-			        		</div>
-			        	</div>
-			        </li>
-			        <li onclick="location.href='single-page.html';">
-			        	<img src="images/books/poppedcover.jpg" width="200">
-			        	<div class="post-info">
-			        		<div class="post-basic-info">
-				        		<h3><a href="#">Popped Culture</a></h3>
-				        		<span><a href="#"><label> </label>Book</a></span>
-				        		<p>Popped Culture is a story about a girl named Joan, formerly a girl named John. It's about her life, the people in her life, and... a penis in a pickle jar.</p>
-			        		</div>
-			        		<div class="post-info-rate-share">
-			        			<div class="rateit">
-			        				<span> </span>
-			        			</div>
-			        			<div class="post-share">
-			        				<span> </span>
-			        			</div>
-			        			<div class="clear"> </div>
-			        		</div>
-			        	</div>
-			        </li>
-			        		        
-			        <!-- End of grid blocks -->
-			      </ul>
-			    </div>
-			    </div>
-			</div>
-		</div>
-		<!---//End-content---->
-
-		<!---//End-wrap---->
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
- 		<script>
-			$('.carousel').carousel({
-				interval: 18000
-			})
-		</script>
-	</body>
+      <!-- FOOTER -->
+      <div class="footer">
+        <ul>
+          <li>© 2016. <span>Original Clich&#233 Entertainment Inc.</span> Designed by Barbora Doslikova.</li>
+          <li></li>
+        </ul>
+    </div>   
+      
+  </div>
+  <!-- javascript at the bottom for fast page loading --> 
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript"> 
+    $(document).ready(function() {
+      $('#images').kwicks({
+        max : 231,  // 600; how far they slide, same as pic width
+        spacing : 4  // 2; white bar btw images
+      });
+    });
+  </script> <!-- for book effect -->
+</body>
 </html>
-
