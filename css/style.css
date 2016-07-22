@@ -1,49 +1,11 @@
-
-/* HEADER */
-.header {
-  position: fixed; /*-- sticks to... --*/
-  top: 0;          /*-- ...the top --*/
-  width: 100%;     /*-- makes it show in line so take out for small media --*/
-  height:6.9em;    /*-- just cosmetic, take out for final --*/
+/* ALL MEDIA
+*************************************/
+.container {
+  font-family: "Advent Pro", sans-serif;
 }
-.main_list {
-  width:70%;
-  margin: 0 auto;    /*-- centers the box itself --*/
-  text-align:center; /*-- text means inner .menu_box_list ul --*/
-}
-
-.cliche img {
-  float:left;  
-  height:8em;
-}
-.teace {
-  float:right;
-  font-family: "Hind";
-  font-size: 3em;
-  text-transform: uppercase;
-  line-height: 2.67em;    /*-- to match... --*/
-  vertical-align: middle; /*-- ...eye height --*/
-}
-
-.menu {  
-  clear:both;
-}
-.menu li {
-  display: inline-block;
-}
-.menu a {
-  margin: 0.44em 2em;
-  display: block;
-  font-family: "Hind";
-  font-size: 2em;
-  font-weight: 300;
-  text-transform: uppercase;
-  text-align: center;  
-}
-
 a {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 a:hover {
   color:#A9A9A9;
@@ -52,20 +14,43 @@ a:hover {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-
-
-/* SCROLLING SECTION */
+.cliche img {
+  float: left;  
+  height: 8em;
+  display:none;
+}
+.teace {
+  font-size: 2em;
+}
+.main_list {
+  width: 70%;         /*-- positions the eye and TEACE.ca --*/
+  margin: 0 auto;     /*-- centers the box itself --*/
+  text-align: center; /*-- centers inner lists --*/
+}
+.menu a {
+  margin: 0.44em 2em;
+  display: block;
+  font-size: 1.2em;
+  text-align: center; 
+}
+/* Scrolling Panel */
 .scroll-pane {
-  height:25em;
-  margin-top: 14em;
+  height: 23.5em;
+  margin-top: 1em;
 }
 .inner {
   width: 1100px;  /* has to be in px else shows vertical scroll bar in em */
   margin: 0 auto;
-  padding-left:170px;
+  padding-left: 48px;
 }
-
-/* IMAGE TRANSITIONS */
+.jspArrow {  
+  background-color: white;
+  padding-left: 4em;
+}
+.jspArrow.jspDisabled {
+  background-color: white;
+}
+/* Image Trnsition */
 ul#images {
   padding: 0;
   list-style: none;
@@ -79,8 +64,7 @@ ul#images li {
   width: 100px; /* how much width of pic showed at rest */
   height: 346px; /* has to match pic height */
 }
-
-/* ICONS */
+/* Icons */
 .icons {
   width: 100%;
 }
@@ -91,14 +75,14 @@ ul#images li {
   color:black;
   display: inline-block;
   font-size: 2.5em;
-  margin-top: 0.25em;
+  margin-top: 0.7em;
   padding: 0 0.25em;
 }
-
-/* FOOTER */
+/* Footer */
 .footer {
   width: 100%;
-}
+  font-family: "Cardo"
+;}
 .footer ul {
   text-align:center;
 }
@@ -110,3 +94,153 @@ ul#images li {
 .footer li span {
   font-weight: bold;
 }
+.small p {
+  font-size: 0.8em;
+  margin-top: -0.4em;
+}
+
+
+/* MEDIA SPECIFIC
+*************************************/
+@media (min-width: 320px) { 
+  body {
+    border: 3px dotted yellow;
+  }
+}
+@media (min-width: 400px) { 
+  body {
+    border: 3px dotted orange;
+  }
+  .jspArrow {  
+    padding-left: 6em;
+  }
+}
+/* 480px MEDIA = 1 type of Androids */
+@media (min-width: 480px) { 
+  body {
+    border: 3px dotted red;
+  }  
+  .cliche img {
+    display: inline; /*-- from hidden --*/
+  }
+  .teace {
+    float: right;
+    font-size: 3em;
+    line-height: 2.67em;    /*-- to match... --*/
+    vertical-align: middle; /*-- ...the eye height --*/
+  }
+  .menu {
+    clear:both;
+  }
+  .menu a {
+    font-size: 1.5em;
+  }
+  .jspArrow {  
+    padding-left: 9.5em;
+  }
+}
+/* 600px MEDIA = 2 types of Androids */
+@media (min-width: 600px) { 
+  body {
+    border: 3px dotted purple;
+  } 
+}
+/* 640px MEDIA = 1 type of Androids */
+@media (min-width: 640px) { 
+  body {
+    border: 3px dotted blue;
+  }
+  .jspArrow {  
+    padding-left: 14em;
+  }
+}
+/* 768px MEDIA = tablets */
+@media (min-width: 768px) { 
+  body {
+    border: 3px dotted green;
+  } 
+  .jspArrow {  
+    padding-left: 16em;
+  } 
+}
+/* 800px MEDIA = laptops */
+@media (min-width: 800px) { 
+  body {
+    border: 3px dotted yellow;
+  }
+  .main_list {
+    width: 80%;
+  }
+  .menu li {
+    display: inline-block;
+  }
+  .menu a {
+    font-size: 1.55em;
+  } 
+}
+/* 900px MEDIA = laptops */
+@media (min-width: 900px) { 
+  body {
+    border: 3px dotted orange;
+  }
+  .inner {
+    width: 900px;  /* has to be in px else shows vertical scroll bar in em */
+    margin: 0 auto;
+    margin-left: 0px;
+  }
+  .icons li {
+    margin-top: 0em;
+  }
+}
+/* 1024px MEDIA = 2 types of Androids & tables */
+@media (min-width: 1024px) {  
+  body {
+    border: 3px dotted red;
+  }
+  .teace {
+    font-size: 3.2em;
+  }
+  .main_list {
+    width: 70%;      /*-- positions the eye and TEACE.ca --*/
+  }
+  .inner {
+    width: 1100px;  /* has to be in px else shows vertical scroll bar in em */
+    margin: 0 auto;
+    padding-left: 160px;
+  }
+  .menu a {
+    font-size: 2.5em;
+  }
+  .icons li {
+  margin-top: 0em;
+  }
+}
+
+
+
+
+
+
+
+/* 1280px MEDIA = laptops */
+@media (min-width: 1280px) { 
+  
+
+}
+/* 1366px MEDIA = laptops */
+@media (min-width: 1366px) { 
+  
+
+}
+/* 1400px MEDIA = laptops */
+@media (min-width: 1400px) { 
+  
+
+}
+/* 1680px MEDIA = desktops */
+@media (min-width: 1680px) { 
+  
+
+}
+
+
