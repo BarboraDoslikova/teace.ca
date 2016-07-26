@@ -1,8 +1,12 @@
-/* ALL MEDIA
+/* HOME PAGE
 *************************************/
 .container {
   font-family: "Advent Pro", sans-serif;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -100,11 +104,133 @@ ul#images li {
 }
 
 
+/* THE COLLECTION PAGE
+*************************************/
+.cover {
+  margin-bottom: 2em;
+}
+h1 {
+  clear:both;
+  font-size: 2em; /* changed for media */
+}
+p {
+  font-size: 1.12em;
+  line-height: 1.8em;
+}
+.cover img {
+  margin-top: 0.5em;
+}
+.buy-now img {
+  position: relative;
+  left: -4em;  /* changed for media */
+  top: 9em;    /* changed for media */
+  opacity: 0.8;  
+}
+.buy-now img:hover {
+  opacity: 1;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+/* shorts */
+.short {
+  display: block;
+  width: 90%;  
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1em;  /* changed for media */
+}
+h2 {
+  display: block;    
+  height: 6em;
+  width: 95%;
+  margin: 0 auto;
+  font-size: 1.5em; /* changed for media */
+  line-height: 6em; /* changed for media */
+}
+.short img {
+  display: block;
+  width: 90%;
+  max-width: 521px;
+  margin: 0 auto;
+  margin-top: -9em;
+}
+.short img:hover {
+  opacity: 0.3;
+}
+/* shorts - excerpts */
+.short p {
+  display: block; 
+  margin: 0 auto;
+  font-family: "Cardo";
+  font-size: 1.25em;
+  text-align: left;
+  margin-top: 1em;
+  max-width: 521px;
+}
+#continued {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 1.7em;
+  margin-top: 0.5em;
+}
+#start-hidden {
+  display: none;  /* hides the excerpts on page load */
+}
+#start-hidden span {
+  font-weight: bold;
+}
+/* go to the top button */
+.go-top {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  padding: 0.5em;
+  display: none;
+}
+.go-top i {
+  font-size: 3em;
+}
+.go-top:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
 /* MEDIA SPECIFIC
 *************************************/
+@media (min-width: 20px) { 
+  body {
+    border: 3px dotted black;
+  }
+  h1 {
+    font-size: 1.5em;  /* changed for media */
+  }
+  .buy-now img {
+    left: 0em;  /* changed for media */
+    top: -3em;    /* changed for media */
+  }
+  h2 {
+    font-size: 1.4em; /* changed for media */
+    line-height: 2.2em; /* changed for media */
+  }
+  .short {
+    margin-top: -4em;
+    margin-bottom: 5em;
+  }
+}
 @media (min-width: 320px) { 
   body {
     border: 3px dotted yellow;
+  }
+  h2 {
+    line-height: 3em; /* changed for media */
   }
 }
 @media (min-width: 400px) { 
@@ -113,6 +239,20 @@ ul#images li {
   }
   .jspArrow {  
     padding-left: 6em;
+  }
+  h1 {
+    font-size: 1.6em;
+  }
+  .buy-now img {
+    left: -3em;  /* changed for media */
+    top: 8em;    /* changed for media */
+  }
+  h2 {
+    line-height: 3.5em; /* changed for media */
+  }
+  .short {
+    margin-top: 2.5em;
+    margin-bottom: 0em;
   }
 }
 /* 480px MEDIA = 1 type of Androids */
@@ -125,8 +265,8 @@ ul#images li {
   }
   .teace {
     float: right;
-    font-size: 3em;
-    line-height: 2.67em;    /*-- to match... --*/
+    font-size: 2.8em;
+    line-height: 2.8em;    /*-- to match... --*/
     vertical-align: middle; /*-- ...the eye height --*/
   }
   .menu {
@@ -138,12 +278,21 @@ ul#images li {
   .jspArrow {  
     padding-left: 9.5em;
   }
+  .short {
+    margin-top: 2em;
+  }
+  h2 {
+    line-height: 4.5em; /* changed for media */
+  }
 }
 /* 600px MEDIA = 2 types of Androids */
 @media (min-width: 600px) { 
   body {
     border: 3px dotted purple;
   } 
+  h2 {
+    line-height: 5.25em; /* changed for media */
+  }
 }
 /* 640px MEDIA = 1 type of Androids */
 @media (min-width: 640px) { 
@@ -152,6 +301,9 @@ ul#images li {
   }
   .jspArrow {  
     padding-left: 14em;
+  }
+  h2 {
+    line-height: 5.75em; /* changed for media */
   }
 }
 /* 768px MEDIA = tablets */
@@ -162,6 +314,9 @@ ul#images li {
   .jspArrow {  
     padding-left: 16em;
   } 
+  h2 {
+    line-height: 6.25em; /* changed for media */
+  }
 }
 /* 800px MEDIA = laptops */
 @media (min-width: 800px) { 
@@ -175,8 +330,19 @@ ul#images li {
     display: inline-block;
   }
   .menu a {
-    font-size: 1.55em;
+    font-size: 1.4em;
   } 
+  h1 {
+    font-size: 2em; /* changed for media */
+  }
+  h2 {   
+    font-size: 1.75em; /* changed for media */
+    line-height: 7.5em; /* changed for media */
+  }
+  .short {
+    margin-top: -1em;
+    margin-bottom: 0.5em;
+  }
 }
 /* 900px MEDIA = laptops */
 @media (min-width: 900px) { 
@@ -209,7 +375,7 @@ ul#images li {
     padding-left: 160px;
   }
   .menu a {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
   .icons li {
   margin-top: 0em;
@@ -242,5 +408,3 @@ ul#images li {
   
 
 }
-
-
