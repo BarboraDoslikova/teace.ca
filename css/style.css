@@ -1,12 +1,35 @@
-/* HOME PAGE
+a, abbr, acronym, address, applet, article, aside, audio,
+b, blockquote, big, body,
+center, canvas, caption, cite, code, command,
+datalist, dd, del, details, dfn, dl, div, dt, 
+em, embed,
+fieldset, figcaption, figure, font, footer, form, 
+h1, h2, h3, h4, h5, h6, header, hgroup, html,
+i, iframe, img, ins,
+kbd, 
+keygen,
+label, legend, li, 
+meter,
+nav,
+object, ol, output,
+p, pre, progress,
+q, 
+s, samp, section, small, span, source, strike, strong, sub, sup,
+table, tbody, tfoot, thead, th, tr, tdvideo, tt,
+u, ul, 
+var {
+  border: 1px dotted yellow; /* delete for final */
+}
+
+/* ALL .HTML
 *************************************/
 .container {
   font-family: "Advent Pro", sans-serif;
   width: 90%;
   margin: 0 auto;
   text-align: center;
+  color: black;
 }
-
 a {
   text-decoration: none;
   color: black;
@@ -18,43 +41,131 @@ a:hover {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+/* HEADER (all .html)
+*************************************/
+.header {
+  height: 7em;  
+  border: 1px dotted green;
+}
 .cliche img {
-  float: left;  
-  height: 8em;
-  display:none;
+  height: 100%;
+  float: left;
 }
 .teace {
-  font-size: 2em;
+  font-size: 400%;
+  float: right;
+  line-height: 1.75em;    /* to match eye height */
 }
-.main_list {
-  width: 70%;         /*-- positions the eye and TEACE.ca --*/
-  margin: 0 auto;     /*-- centers the box itself --*/
-  text-align: center; /*-- centers inner lists --*/
+@media only screen and (max-width : 450px) { 
+  .header {
+    height: 4.5em;  
+  }
+  .cliche img {  
+    display: none;
+  }  
+  .teace {
+    float: none;
+    font-size: 300%;
+  }
 }
-.menu a {
-  margin: 0.44em 2em;
-  display: block;
+@media only screen and (min-width : 1024px) { 
+  .header {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+/* FOOTER (all .html)
+*************************************/
+.footer {
+  border: 1px dotted green;
+  margin-top: 1em;
+}
+.icons li {
+  display: inline-block;
+  font-size: 2.3em;
+  margin-left: 0.25em;
+}
+.footer p {
+  margin-top: 0.5em;
+  font-family: "Cardo", serif;
+  font-size: 0.8em;
+}
+.footer .bigger {
   font-size: 1.2em;
-  text-align: center; 
 }
-/* Scrolling Panel */
+/* MENU (index.html)
+*************************************/
+.menu {
+  border: 1px dotted blue;
+  margin-top: 0.5em;
+  clear:both;
+}
+.menu li {
+  display: block;
+  margin-top: 0.2em;
+  font-size: 1.5em;
+}
+@media only screen and (min-width : 768px) { 
+  .menu li {
+    display: inline-block;
+    border: 1px dotted blue;
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width : 1024px) { 
+  .menu li {
+    margin-left: 1.25em;
+  }
+}
+/* SCROLL PANE (index.html)
+*************************************/
 .scroll-pane {
   height: 23.5em;
-  margin-top: 1em;
+  margin-top: 1em;  
 }
 .inner {
   width: 1100px;  /* has to be in px else shows vertical scroll bar in em */
-  margin: 0 auto;
-  padding-left: 48px;
 }
 .jspArrow {  
   background-color: white;
-  padding-left: 4em;
 }
 .jspArrow.jspDisabled {
   background-color: white;
 }
-/* Image Trnsition */
+@media only screen and (max-width : 320px) { 
+  .jspArrow {  
+    padding-left: 2em; 
+  }
+}
+@media only screen and (min-width : 320px) { 
+  .jspArrow {  
+    padding-left: 2em;
+  }
+}
+@media only screen and (min-width : 450px) {  /* extra */
+  .jspArrow {  
+    padding-left: 6em; 
+  }
+}
+@media only screen and (min-width : 768px) {
+  .jspArrow {  
+    padding-left: 14em; 
+  }
+}
+@media only screen and (min-width : 1024px) {
+  .inner {
+    margin-left: 4.5em;
+  }
+  .jspArrow {  
+    padding-left: 20em; 
+  }
+}
+@media only screen and (min-width : 1224px) { 
+  .inner {
+    margin-left: 14.5em;
+  }
+}
+/* Image Transition */
 ul#images {
   padding: 0;
   list-style: none;
@@ -68,102 +179,77 @@ ul#images li {
   width: 100px; /* how much width of pic showed at rest */
   height: 346px; /* has to match pic height */
 }
-/* Icons */
-.icons {
-  width: 100%;
-}
-.icons ul {
-  text-align:center;
-}
-.icons li {
-  color:black;
-  display: inline-block;
-  font-size: 2.5em;
-  margin-top: 0.7em;
-  padding: 0 0.25em;
-}
-/* Footer */
-.footer {
-  width: 100%;
-  font-family: "Cardo"
-;}
-.footer ul {
-  text-align:center;
-}
-.footer li {
-  color:black;
-  font-size: 1em;
-  margin-top: 0.9em;
-}
-.footer li span {
-  font-weight: bold;
-}
-.small p {
-  font-size: 0.8em;
-  margin-top: -0.4em;
-}
-
-
-/* THE COLLECTION PAGE
+/* COVER (most .html)
 *************************************/
 .cover {
-  margin-bottom: 2em;
-}
-h1 {
-  clear:both;
-  font-size: 2em; /* changed for media */
-}
-p {
-  font-size: 1.12em;
-  line-height: 1.8em;
-}
-.cover img {
+  font-size: 130%; /* for adjusting font-size of both .cover h1 & p */
   margin-top: 0.5em;
 }
-.buy-now img {
-  position: relative;
-  left: -4em;  /* changed for media */
-  top: 9em;    /* changed for media */
+.cover-small img {
+  margin-top: 0.5em;
+}
+
+.buy-now img {  
   opacity: 0.8;  
+  margin-top: -3em;
 }
 .buy-now img:hover {
   opacity: 1;
   -moz-transition: all 1s;
   -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
-
-/* shorts */
+@media only screen and (min-width : 468px) {  /* different */
+  .collection-page .buy-now img {  
+    margin-top: 6em;
+    margin-left: -3em;
+    border: 2px dashed red;
+  }
+}
+/* SHORTS (most .html)
+*************************************/
+.collection-page .shorts {
+  margin-top: 3em;
+}
 .short {
-  display: block;
-  width: 90%;  
+  width: 100%;  
   margin: 0 auto;
-  text-align: center;
-  margin-bottom: 1em;  /* changed for media */
+  text-align: center;  
+  margin-top: 0.5em;
 }
-h2 {
-  display: block;    
-  height: 6em;
-  width: 95%;
-  margin: 0 auto;
-  font-size: 1.5em; /* changed for media */
-  line-height: 6em; /* changed for media */
-}
-.short img {
+.short .click-to-read {
   display: block;
-  width: 90%;
+  width: 100%;
   max-width: 521px;
-  margin: 0 auto;
-  margin-top: -9em;
+  margin: 0 auto; 
 }
-.short img:hover {
+@media only screen and (max-width : 375px) {  /* different cut-off */
+  .short h2 {
+    font-size: 1.4em;     
+    line-height: 3.65em;   
+  }
+  .short .click-to-read {
+    margin-top: -5.25em;   
+  }
+}
+@media only screen and (min-width : 375px) {  /* different cut-off */
+  .short h2 {
+    font-size: 2em;  
+    line-height: 5em;  
+  }
+  .short .click-to-read {
+    margin-top: -10.5em;   
+  }
+}
+.short .click-to-read:hover {
   opacity: 0.3;
 }
 /* shorts - excerpts */
 .short p {
   display: block; 
   margin: 0 auto;
-  font-family: "Cardo";
+  font-family: "Cardo", serif;
   font-size: 1.25em;
   text-align: left;
   margin-top: 1em;
@@ -180,7 +266,8 @@ h2 {
 #start-hidden span {
   font-weight: bold;
 }
-/* go to the top button */
+/* GO-TO-THE-TOP BUTOON (most .html)
+*************************************/
 .go-top {
   position: fixed;
   bottom: 2em;
@@ -201,184 +288,402 @@ h2 {
 
 
 
-
-
-/* MEDIA SPECIFIC
+/* BLINDFOLD (blindfold.html)
 *************************************/
-@media (min-width: 20px) { 
-  body {
-    border: 3px dotted black;
-  }
-  h1 {
-    font-size: 1.5em;  /* changed for media */
-  }
-  .buy-now img {
-    left: 0em;  /* changed for media */
-    top: -3em;    /* changed for media */
-  }
-  h2 {
-    font-size: 1.4em; /* changed for media */
-    line-height: 2.2em; /* changed for media */
-  }
-  .short {
-    margin-top: -4em;
-    margin-bottom: 5em;
+/* .cover  */
+.cover {
+  border: 1px dotted red;
+}
+.blindfold-page .icons li {
+  border: 1px dotted red;
+  font-size: 2.5em;
+  vertical-align: middle;
+  position: relative;
+  margin-top: 0.5em;
+}
+.blindfold-page .icons li:last-child { /* helps to centre cover icons */
+  width: 1.6em;
+}
+.IMDb-icon {
+  position: absolute;
+  height: 1.1em;
+  top: -5%;
+  left: -5%;
+  opacity: 0.8;
+}
+.IMDb-icon:hover {
+  opacity: 1;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.cover-large {   /* poster image */
+  width: 100%;
+  max-width: 370px;
+  border: 1px dotted red;
+}
+.do-now li { 
+  display: inline-block;   
+}
+.do-now img {
+  height: 3.4em; 
+  opacity: 0.8; 
+}
+.do-now img:hover {
+  opacity: 1;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+@media only screen and (min-width : 365px) {  /* different */
+  .do-now img {
+    height: 4.2em;
   }
 }
-@media (min-width: 320px) { 
-  body {
-    border: 3px dotted yellow;
+@media only screen and (min-width : 530px) { /* different */
+  .do-now {
+    position: relative;
+    margin-top: -20em;
+    margin-left: 17.6em;    
   }
-  h2 {
-    line-height: 3em; /* changed for media */
+  .do-now li { 
+    display: block;
   }
-}
-@media (min-width: 400px) { 
-  body {
-    border: 3px dotted orange;
-  }
-  .jspArrow {  
-    padding-left: 6em;
-  }
-  h1 {
-    font-size: 1.6em;
-  }
-  .buy-now img {
-    left: -3em;  /* changed for media */
-    top: 8em;    /* changed for media */
-  }
-  h2 {
-    line-height: 3.5em; /* changed for media */
-  }
-  .short {
-    margin-top: 2.5em;
-    margin-bottom: 0em;
+  .do-now img {
+    height: 4.2em;  
   }
 }
-/* 480px MEDIA = 1 type of Androids */
-@media (min-width: 480px) { 
-  body {
-    border: 3px dotted red;
-  }  
-  .cliche img {
-    display: inline; /*-- from hidden --*/
+/* content  */
+.watch h2, .listen h2 {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+/* .watch  */
+.watch p {
+  font-size: 1.25em;
+}
+.watch #red {
+  color: red;
+}
+.watch #blue {
+  color: blue;
+}
+.watch #green {
+  color: green;
+}
+/* .listen  */
+.listen img, .listen iframe {
+  width: 100%;
+  max-width: 400px;
+}
+/* .read  */
+.read-title {
+  border: 1px dashed red;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+.download a {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 1.25em;
+  float: right;
+}
+@media only screen and (max-width : 530px) {  /* orange */
+  .watch iframe {
+    height: 146.3px;
+    width: 256px;
   }
-  .teace {
-    float: right;
-    font-size: 2.8em;
-    line-height: 2.8em;    /*-- to match... --*/
-    vertical-align: middle; /*-- ...the eye height --*/
+  .first {
+    padding-top: 2em;
   }
-  .menu {
-    clear:both;
-  }
-  .menu a {
-    font-size: 1.5em;
-  }
-  .jspArrow {  
-    padding-left: 9.5em;
-  }
-  .short {
-    margin-top: 2em;
-  }
-  h2 {
-    line-height: 4.5em; /* changed for media */
+  .playreality-page .summary {
+    max-width: 256px;
   }
 }
-/* 600px MEDIA = 2 types of Androids */
-@media (min-width: 600px) { 
-  body {
-    border: 3px dotted purple;
-  } 
-  h2 {
-    line-height: 5.25em; /* changed for media */
+@media only screen and (min-width : 530px) {  /* orange */
+  .watch h2 {
+    clear: both;
+    border: 1px dashed green;
+    margin-top: 6.5em;
+  }
+  .watch iframe {
+    height: 228.6px;
+    width: 400px;
+  }
+  .first {
+    padding-top: 4em;
+  }
+  .playreality-page .summary {
+    max-width: 400px;
   }
 }
-/* 640px MEDIA = 1 type of Androids */
-@media (min-width: 640px) { 
-  body {
-    border: 3px dotted blue;
+@media only screen and (min-width : 768px) { /* red */
+  .watch iframe {
+    height: 360px;
+    width: 630px;
   }
-  .jspArrow {  
-    padding-left: 14em;
-  }
-  h2 {
-    line-height: 5.75em; /* changed for media */
+  .playreality-page .summary {
+    max-width: 630px;
   }
 }
-/* 768px MEDIA = tablets */
-@media (min-width: 768px) { 
-  body {
-    border: 3px dotted green;
-  } 
-  .jspArrow {  
-    padding-left: 16em;
-  } 
-  h2 {
-    line-height: 6.25em; /* changed for media */
+/* .summary  */
+.summary {
+  border: 1px dotted red;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 1.25em;
+  font-family: "Cardo", serif;
+  max-width: 521px;
+}
+.summary p {
+  margin-top: 0.5em;
+}
+/* .buy-now  */
+@media only screen and (min-width : 630px) {  /* different */
+  .reverie-page .buy-now img, .playreality-page .buy-now img {  
+    margin-top: 12em;
+    margin-left: -3em;
+    border: 2px dashed green;
   }
 }
-/* 800px MEDIA = laptops */
-@media (min-width: 800px) { 
-  body {
-    border: 3px dotted yellow;
-  }
-  .main_list {
-    width: 80%;
-  }
-  .menu li {
-    display: inline-block;
-  }
-  .menu a {
-    font-size: 1.4em;
-  } 
-  h1 {
-    font-size: 2em; /* changed for media */
-  }
-  h2 {   
-    font-size: 1.75em; /* changed for media */
-    line-height: 7.5em; /* changed for media */
-  }
-  .short {
-    margin-top: -1em;
-    margin-bottom: 0.5em;
-  }
+
+/* COLORS (most .html)
+*************************************/
+.reverie-page {
+  background-color: #310100; /* deep red  */
 }
-/* 900px MEDIA = laptops */
-@media (min-width: 900px) { 
-  body {
-    border: 3px dotted orange;
-  }
-  .inner {
-    width: 900px;  /* has to be in px else shows vertical scroll bar in em */
+.blindfold-page {
+  background-color: #232323; /* dark grey  */
+}
+.playreality-page {
+  background-color: #336666; /* warm blue  */
+}
+.rise-page {
+  background-color: black; /* warm blue  */
+}
+.reverie-page .container, .blindfold-page .container, .playreality-page .container, .rise-page .container  {
+  color: white;
+}
+.reverie-page a, .blindfold-page a, .playreality-page a, .rise-page a {
+  color: white;
+}
+.reverie-page a:hover, .blindfold-page a:hover, .playreality-page a:hover, .rise-page a:hover {
+  color:#A9A9A9;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* POPPED CULTURE (popped.html)
+*************************************/
+.popped-page {
+  height: 100%;
+    background: linear-gradient(90deg, #6699cc 50%, #E37987 50%); /* cyan, pink */
+}
+@media only screen and (min-width : 630px) {  /* different */
+  .popped-page .cover-large {
+    display: block;
     margin: 0 auto;
-    margin-left: 0px;
   }
-  .icons li {
-    margin-top: 0em;
+  .popped-page .buy-now img {
+    margin-top: -12em;
+    margin-left: 18em;
   }
 }
-/* 1024px MEDIA = 2 types of Androids & tables */
-@media (min-width: 1024px) {  
-  body {
-    border: 3px dotted red;
+.popped-page .short p {
+  font-weight: bold;
+}
+.popped-page .short span {
+  font-size: 1.5em;
+}
+/* PLAY REALITY (playreality.html)
+*************************************/
+.stable-banner {
+  border: 1px dashed green;
+}
+.stable-banner img {
+  margin-top: 1.5em;
+  clear:both;
+  width: 100%;
+  max-width: 400px;
+}
+@media only screen and (min-width : 530px) {  /* orange */
+  .stable-banner img {
+    clear: both;
+    border: 1px dashed green;
+    margin-top: 16em;
   }
-  .teace {
-    font-size: 3.2em;
-  }
-  .main_list {
-    width: 70%;      /*-- positions the eye and TEACE.ca --*/
-  }
-  .inner {
-    width: 1100px;  /* has to be in px else shows vertical scroll bar in em */
-    margin: 0 auto;
-    padding-left: 160px;
-  }
-  .menu a {
-    font-size: 2.2em;
-  }
-  .icons li {
+}
+.playreality-page .watch h2 {
+  border: 1px dashed green;
+  margin-top: 1em;
+}
+.playreality-page .summary {
+  border: 1px dashed green;
   margin-top: 0em;
+  font-family: "Advent Pro", sans-serif;
+}
+/* RISE PAGE (rise.html)
+*************************************/
+
+.cover-flat {   /* poster image */
+  width: 100%;
+  max-width: 521px;
+  border: 1px dotted white;
+}
+@media only screen and (min-width : 790px) {  /* different */
+  .rise-page .cover-flat {
+    display: block;
+    margin: 0 auto;
+  }
+  .rise-page .buy-now img {
+    margin-top: -12em;
+    margin-left: 25em;
+    border: 1px dotted white;
+  }
+}
+.radioactive h2 {
+  color: black;
+}
+.radioactive #start-hidden p {
+  display: inline;
+}
+.rise-page .read {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: 1px solid white;
+}
+/* LOADER (rise.html)
+*************************************/
+.loader {
+  position: relative;
+  margin: 0px auto;
+  width: 100px;
+}
+.loader:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+.circular {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  height: 100%;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-linecap: round;
+}
+@-webkit-keyframes 
+rotate {  100% {
+ -webkit-transform: rotate(360deg);
+ transform: rotate(360deg);
+}
+}
+@keyframes 
+rotate {  100% {
+ -webkit-transform: rotate(360deg);
+ transform: rotate(360deg);
+}
+}
+@-webkit-keyframes 
+dash {  0% {
+ stroke-dasharray: 1, 200;
+ stroke-dashoffset: 0;
+}
+ 50% {
+ stroke-dasharray: 89, 200;
+ stroke-dashoffset: -35;
+}
+ 100% {
+ stroke-dasharray: 89, 200;
+ stroke-dashoffset: -124;
+}
+}
+@keyframes 
+dash {  0% {
+ stroke-dasharray: 1, 200;
+ stroke-dashoffset: 0;
+}
+ 50% {
+ stroke-dasharray: 89, 200;
+ stroke-dashoffset: -35;
+}
+ 100% {
+ stroke-dasharray: 89, 200;
+ stroke-dashoffset: -124;
+}
+}
+@-webkit-keyframes 
+color {  100%, 0% {
+ stroke: yellow;
+}
+ 40% {
+ stroke: yellow;
+}
+ 66% {
+ stroke: yellow;
+}
+ 80%, 90% {
+ stroke: yellow;
+}
+}
+@keyframes 
+color {  100%, 0% {
+ stroke: yellow;
+}
+ 40% {
+ stroke: yellow;
+}
+ 66% {
+ stroke: yellow;
+}
+ 80%, 90% {
+ stroke: yellow;
+}
+}
+
+
+
+
+@media only screen and (max-width : 320px) { 
+  body {
+    border: 3px dotted yellow; /* Smartphones (portrait) ----------- */
+  }
+}
+@media only screen and (min-width : 320px) { 
+  body {
+    border: 3px dotted orange; /* Smartphones (landscape) ----------- */
+  }
+}
+@media only screen and (min-width : 768px) {
+  body {
+    border: 3px dotted red; /* iPads (landscape) ----------- */
+  }
+}
+@media only screen and (min-width : 1024px) {
+  body {
+    border: 3px dotted purple; /* iPads (portrait) ----------- */
+  }
+}
+@media only screen and (min-width : 1224px) { 
+  body {
+    border: 3px dotted blue; /* Desktops and laptops ----------- */
   }
 }
 
@@ -387,24 +692,3 @@ h2 {
 
 
 
-
-/* 1280px MEDIA = laptops */
-@media (min-width: 1280px) { 
-  
-
-}
-/* 1366px MEDIA = laptops */
-@media (min-width: 1366px) { 
-  
-
-}
-/* 1400px MEDIA = laptops */
-@media (min-width: 1400px) { 
-  
-
-}
-/* 1680px MEDIA = desktops */
-@media (min-width: 1680px) { 
-  
-
-}

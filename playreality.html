@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+
+<head>
+  <meta http-equiv='content-type' content='text/html; charset=UTF-8' />  
+  <title>TEACE.ca | Teace Snyder | Official Website</title>
+  <meta name='description' content='TEACE.ca features the project portfolio of the writer, director and producer Teace Snyder.' />
+  <link rel='shortcut icon' type='image/x-icon' href='images/logo.png' />
+
+  <meta name='viewport' content='width=device-width, initial-scale=1' />     
+ 
+  <!-- STYLES -->
+  <link rel='stylesheet' type='text/css' href='css/reset.css' media='all' />
+  <link rel='stylesheet' type='text/css' href='css/jquery.jscrollpane.css' media='all' />
+  <link rel='stylesheet' type='text/css' href='css/style.css' media='all' />
+  
+
+  <!-- FONTS -->
+  <link href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Advent+Pro|Cardo' rel='stylesheet' type='text/css'>
+  
+  <!-- SCRIPTS -->
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+
+  <!-- the mousewheel plugin - optional to provide mousewheel support -->
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+
+  <!-- latest jQuery direct from google's CDN -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+        $(".click-to-read").click(function(){
+            $(this).next().toggle();
+        });
+    });
+  </script>
+  
+</head>
+
+<body>
+
+  <div class="playreality-page">
+  <div class="container">
+    
+    <!-- HEADER -->
+    <div class="header"> 
+      <a class="cliche" href="index.html"><img src="images/logo2-orangeblue.png" alt="eye logo" /></a>
+      <a class="teace" href="index.html">TEACE.ca</a>
+    </div> 
+    
+    <!-- PAGE CONTENT: top --> 
+    <div class="cover">
+      
+      <a href="https://www.lulu.com/shop/search.ep?contributorId=273176"><img class="cover-large" src="images/projects/playreality/playrealitycover.jpg" alt="x" /></a>
+      
+      <ul class="do-now">
+        <li><a href="http://playreality.ca/" ><img src="images/go-main.png" alt="x" /></a><li>
+        <li><a href="#media-press" ><img src="images/media-press.png" alt="x" /></a></li>   
+      </ul>           
+    </div> <!-- end cover -->
+
+    <div class="stable-banner">
+      <img src="images/projects/playreality/playrealitybanner.jpg" alt="x" />
+    </div>
+
+    <!-- Watch the interview -->
+    <div class="watch" id="media-press">
+      <h2>Media And Press</h2>
+      <iframe src="https://www.youtube.com/embed/NgC95EyuJcQ" frameborder="0" allowfullscreen></iframe>
+      <p>An interview with the authors.</p>
+    </div>
+
+    <!-- summary -->
+    <div class="summary">
+      <p><a href="http://www.inretrospectpodcast.com/2012/07/content/digital-wanderlust-how-videogames-are-changing-everything-an-interview-with-dr-jayne-gackenbach-and-teace-snyder/">&bull; Digital Wanderlust: How Videogames are Changing Everything: An Interview with Dr. Jayne Gackenbach and Teace Snyder</a></p>
+
+      <p><a href="https://wolfsgamingblog.com/2012/06/07/play-reality-how-videogames-are-changing-everything-book-review/">&bull; Play Reality: How Videogames Are Changing Everything – Book Review</a></p>
+
+      <p><a href="https://backwardmessages.wordpress.com/tag/teace-snyder/">&bull; More parents are embracing video games — but not the idea that violent games are harmful</a></p>
+
+      <p><a href="http://kotaku.com/5902293/guy-teams-up-with-his-mother-to-defend-video-games">&bull; KOTAKU. Guy Teams Up With His Mother To Defend Video Games</a></p>
+
+      <p><a href="http://www.popsci.com/science/article/2011-12/fyi-it-possible-control-our-dreams">&bull; FYI: IS IT POSSIBLE TO CONTROL OUR DREAMS?</a></p>
+
+      <p><a href="https://www.youtube.com/watch?v=33Q5_u-xIRY">&bull; Play Reality CTV news segment</a></p>
+
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+      <ul class="icons">
+        <li><a href="https://www.facebook.com/OriginalClicheEntertainment/"><i class="fa fa-facebook-square facebook-icon"></i></a></li>
+        <li><a href="https://twitter.com/teacesnyder"><i class="fa fa-twitter-square twitter-icon"></i></a></li>
+        <li><a href="https://vimeo.com/user5902888"><i class="fa fa-vimeo-square vimeo-icon"></i></a></li>
+        <li><a href="https://www.youtube.com/user/teacesnyder"><i class="fa fa-youtube-square youtube-icon"></i></a></li>
+        <li><a href="http://teacesnyder.blogspot.com/"><i class="fa fa-book book-icon"></i></a></li>
+      </ul>
+      
+      <p class="bigger">© 2016. <strong>Original Clich&#233 Entertainment Inc.</strong></li>
+      <p>Website by <a href="http://www.barboradoslikova.com/">Barbora Doslikova.<p>
+  
+    </div> <!-- /end .footer --> 
+
+    <!-- STICKY TO THE TOP BUTTON -->
+    <a href="#" class="go-top"> 
+      <i class="fa fa-arrow-circle-up"></i>
+    </a>
+
+  </div> <!-- /end .container -->    
+  </div> <!-- /end .index-page -->
+  
+   
+  <script> 
+    $(document).ready(function() {
+      // Show or hide the sticky footer button
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+          $('.go-top').fadeIn(200);
+        } else {
+          $('.go-top').fadeOut(200);
+        }
+      });
+      
+      // Animate the scroll to top
+      $('.go-top').click(function(event) {
+        event.preventDefault();
+        
+        $('html, body').animate({scrollTop: 0}, 300);
+      })
+    });
+  </script>
+
+</body>
+</html>
