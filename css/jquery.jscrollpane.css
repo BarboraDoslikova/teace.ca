@@ -30,7 +30,7 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	width: 100%;
+	width: 100%; /*100%*/
 	height: 16px;
 }
 
@@ -46,9 +46,9 @@
 
 .jspTrack
 {
-      border-radius: 15px;
-      box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
-      position: relative;
+    border-radius: 15px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+    position: relative;
 }
 
 .jspDrag
@@ -57,9 +57,9 @@
 	top: 0;
 	left: 0;
 	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.2); 
+	background-color: rgba(0, 0, 0, 0.9); 
     border-radius: 15px;
-    background-image: -webkit-linear-gradient(#F5F5F5, #8A8A8A);
+    background-image: -webkit-linear-gradient(#646464, #000000);
 }
 
 .jspHorizontalBar .jspTrack,

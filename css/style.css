@@ -1,28 +1,53 @@
-a, abbr, acronym, address, applet, article, aside, audio,
-b, blockquote, big, body,
-center, canvas, caption, cite, code, command,
-datalist, dd, del, details, dfn, dl, div, dt, 
-em, embed,
-fieldset, figcaption, figure, font, footer, form, 
-h1, h2, h3, h4, h5, h6, header, hgroup, html,
-i, iframe, img, ins,
-kbd, 
-keygen,
-label, legend, li, 
-meter,
-nav,
-object, ol, output,
-p, pre, progress,
-q, 
-s, samp, section, small, span, source, strike, strong, sub, sup,
-table, tbody, tfoot, thead, th, tr, tdvideo, tt,
-u, ul, 
-var {
-  border: 1px dotted yellow; /* delete for final */
-}
+/* TABLE OF CONTENTS
+**************************************************************************/
+/*** ALL PAGES
+  /* General
+  /* Header
+  /* Footer
 
-/* ALL .HTML
-*************************************/
+/*** ALL PROJECT PAGES
+  /* Cover-small, Cover-large & Buy-now
+  /* Go-To-The-Top Button
+
+/*** SOME PROJECT PAGES
+  /* Share Icons (6 PROJECT PAGES)
+  /* Shorts (5 PROJECT PAGES except playreality.html)
+     /* shorts - excerpts
+  /* Colours (5 PROJECT PAGES except collection.html)
+     /* background-color
+     /* text & links - white
+     /* TEACE.ca
+  /* Summary (3 PROJECT PAGES)
+  /* Watch (2 PROJECT PAGES)
+
+/*** INDEX.HTML ONLY
+  /* Menu (index.html)
+  /* Scroll Pane (index.html)
+     /* general
+     /* inner
+     /* image transition
+
+/*** BLINDFOLD ONLY
+     /* blindfold icons
+     /* cover & do-now
+     /* .listen
+     /* .download & .first
+
+/*** PLAY REALITY & CONTACT.html
+
+/*** RISE PAGE ONLY
+     /* .loader
+/* END TABLE OF CONTENTS
+**************************************************************************/
+
+
+
+
+
+/* ALL PAGES
+**************************************************************************/
+/* General
+********************************************/
 .container {
   font-family: "Advent Pro", sans-serif;
   width: 90%;
@@ -41,11 +66,10 @@ a:hover {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* HEADER (all .html)
-*************************************/
+/* Header
+********************************************/
 .header {
-  height: 7em;  
-  border: 1px dotted green;
+  height: 7em;
 }
 .cliche img {
   height: 100%;
@@ -62,7 +86,7 @@ a:hover {
   }
   .cliche img {  
     display: none;
-  }  
+  }   
   .teace {
     float: none;
     font-size: 300%;
@@ -74,11 +98,11 @@ a:hover {
     margin: 0 auto;
   }
 }
-/* FOOTER (all .html)
-*************************************/
+/* Footer
+********************************************/
 .footer {
-  border: 1px dotted green;
   margin-top: 1em;
+  padding-bottom: 1em;
 }
 .icons li {
   display: inline-block;
@@ -93,94 +117,12 @@ a:hover {
 .footer .bigger {
   font-size: 1.2em;
 }
-/* MENU (index.html)
-*************************************/
-.menu {
-  border: 1px dotted blue;
-  margin-top: 0.5em;
-  clear:both;
-}
-.menu li {
-  display: block;
-  margin-top: 0.2em;
-  font-size: 1.5em;
-}
-@media only screen and (min-width : 768px) { 
-  .menu li {
-    display: inline-block;
-    border: 1px dotted blue;
-    font-size: 2em;
-  }
-}
-@media only screen and (min-width : 1024px) { 
-  .menu li {
-    margin-left: 1.25em;
-  }
-}
-/* SCROLL PANE (index.html)
-*************************************/
-.scroll-pane {
-  height: 23.5em;
-  margin-top: 1em;  
-}
-.inner {
-  width: 1100px;  /* has to be in px else shows vertical scroll bar in em */
-}
-.jspArrow {  
-  background-color: white;
-}
-.jspArrow.jspDisabled {
-  background-color: white;
-}
-@media only screen and (max-width : 320px) { 
-  .jspArrow {  
-    padding-left: 2em; 
-  }
-}
-@media only screen and (min-width : 320px) { 
-  .jspArrow {  
-    padding-left: 2em;
-  }
-}
-@media only screen and (min-width : 450px) {  /* extra */
-  .jspArrow {  
-    padding-left: 6em; 
-  }
-}
-@media only screen and (min-width : 768px) {
-  .jspArrow {  
-    padding-left: 14em; 
-  }
-}
-@media only screen and (min-width : 1024px) {
-  .inner {
-    margin-left: 4.5em;
-  }
-  .jspArrow {  
-    padding-left: 20em; 
-  }
-}
-@media only screen and (min-width : 1224px) { 
-  .inner {
-    margin-left: 14.5em;
-  }
-}
-/* Image Transition */
-ul#images {
-  padding: 0;
-  list-style: none;
-  position: relative;
-}
-ul#images li {
-  display: block;
-  overflow: hidden;
-  padding: 0;
-  float: left;
-  width: 100px; /* how much width of pic showed at rest */
-  height: 346px; /* has to match pic height */
-}
-/* COVER (most .html)
-*************************************/
+
+
+/* ALL PROJECT PAGES
+**************************************************************************/
+/* Cover-small, Cover-large & Buy-now
+********************************************/
 .cover {
   font-size: 130%; /* for adjusting font-size of both .cover h1 & p */
   margin-top: 0.5em;
@@ -188,7 +130,10 @@ ul#images li {
 .cover-small img {
   margin-top: 0.5em;
 }
-
+.cover-large {   
+  width: 100%;
+  max-width: 370px;
+}
 .buy-now img {  
   opacity: 0.8;  
   margin-top: -3em;
@@ -200,74 +145,28 @@ ul#images li {
   -o-transition: all 1s;
   transition: all 1s;
 }
-@media only screen and (min-width : 468px) {  /* different */
+@media only screen and (min-width : 450px) {  /* different */
   .collection-page .buy-now img {  
     margin-top: 6em;
     margin-left: -3em;
-    border: 2px dashed red;
   }
 }
-/* SHORTS (most .html)
-*************************************/
-.collection-page .shorts {
-  margin-top: 3em;
-}
-.short {
-  width: 100%;  
-  margin: 0 auto;
-  text-align: center;  
-  margin-top: 0.5em;
-}
-.short .click-to-read {
-  display: block;
-  width: 100%;
-  max-width: 521px;
-  margin: 0 auto; 
-}
-@media only screen and (max-width : 375px) {  /* different cut-off */
-  .short h2 {
-    font-size: 1.4em;     
-    line-height: 3.65em;   
+@media only screen and (min-width : 610px) {
+  .reverie-page .cover-large,
+  .playreality-page .cover-large,
+  .popped-page .cover-large {
+    display: block;
+    margin: 0 auto;
   }
-  .short .click-to-read {
-    margin-top: -5.25em;   
+  .reverie-page .buy-now img,
+  .playreality-page .buy-now img,
+  .popped-page .buy-now img {
+    margin-top: -12em;
+    margin-left: 18em;
   }
 }
-@media only screen and (min-width : 375px) {  /* different cut-off */
-  .short h2 {
-    font-size: 2em;  
-    line-height: 5em;  
-  }
-  .short .click-to-read {
-    margin-top: -10.5em;   
-  }
-}
-.short .click-to-read:hover {
-  opacity: 0.3;
-}
-/* shorts - excerpts */
-.short p {
-  display: block; 
-  margin: 0 auto;
-  font-family: "Cardo", serif;
-  font-size: 1.25em;
-  text-align: left;
-  margin-top: 1em;
-  max-width: 521px;
-}
-#continued {
-  font-family: "Advent Pro", sans-serif;
-  font-size: 1.7em;
-  margin-top: 0.5em;
-}
-#start-hidden {
-  display: none;  /* hides the excerpts on page load */
-}
-#start-hidden span {
-  font-weight: bold;
-}
-/* GO-TO-THE-TOP BUTOON (most .html)
-*************************************/
+/* Go-To-The-Top Button
+********************************************/
 .go-top {
   position: fixed;
   bottom: 2em;
@@ -287,42 +186,387 @@ ul#images li {
 }
 
 
-
-/* BLINDFOLD (blindfold.html)
-*************************************/
-/* .cover  */
-.cover {
-  border: 1px dotted red;
+/* SOME PROJECT PAGES
+**************************************************************************/
+/* Share Icons (6 PROJECT PAGES)
+********************************************/
+.share-icons {
+  margin-top: 3em;
+  margin-bottom: 2em;
 }
-.blindfold-page .icons li {
-  border: 1px dotted red;
+.index-page .share-icons {
+  margin-top: 1.2em;
+  margin-bottom: -0.5em;
+}
+.share-icons li {
+  display: inline;
+  margin-top: 0.4em;
+  line-height: 2.5em;
+}
+/* Shorts (5 PROJECT PAGES except playreality.html)
+********************************************/
+.read-title {
+  font-size: 1.5em;
+  margin-top: 1.5em;
+}
+.collection-page .shorts {
+  margin-top: 3em;
+}
+.short {
+  width: 100%;  
+  margin: 0 auto;
+  text-align: center;  
+  margin-top: 0.5em;
+}
+.short .click-to-read {
+  display: block;
+  width: 100%;
+  max-width: 521px;
+  margin: 0 auto; 
+  cursor: pointer;
+}
+@media only screen and (max-width : 345px) {
+  .short h2 {
+    font-size: 1.4em;     
+    line-height: 3.65em; 
+  }  
+  .short .click-to-read {
+    margin-top: -5.25em; 
+  }
+  .rise-read h2 {
+    margin-bottom: 0.5em;    
+    font-size: 1.4em;     
+    line-height: 8.3em;
+  }
+  .rise-read .click-to-read {
+    margin-top: -12em;  
+  }
+}
+@media only screen and (min-width : 345px) {  
+  .short h2 {
+    font-size: 1.4em;  
+    line-height: 3.65em; 
+  }
+  .short .click-to-read {
+    margin-top: -5.25em;  
+  }
+  .rise-read h2 {
+    margin-bottom: 0.5em;  
+    font-size: 1.4em;     
+    line-height: 10em;  
+  }
+  .rise-read .click-to-read {
+    margin-top: -14em;   
+  }
+}
+@media only screen and (min-width : 480px) { 
+  .short h2 {
+    font-size: 2em;  
+    line-height: 5em;
+  }
+  .short .click-to-read {
+    margin-top: -10.5em; 
+  }
+  .rise-read h2 {
+    margin-bottom: 0.5em;  
+    font-size: 1.4em;     
+    line-height: 16em;
+  }
+  .rise-read .click-to-read {
+    margin-top: -22em; 
+  }
+}
+.short .click-to-read:hover {
+  opacity: 0.3;
+}
+/* shorts - excerpts */
+.short p {
+  display: block; 
+  margin: 0 auto;
+  font-family: "Cardo", serif;
+  font-size: 1.25em;
+  text-align: left;
+  margin-top: 1em;
+  max-width: 521px;
+}
+.popped-page .short p {
+  font-weight: bold;
+}
+#continued {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 1.7em;
+  margin-top: 0.5em;
+}
+#start-hidden {
+  display: none;  /* hides the excerpts on page load */
+}
+#start-hidden span {
+  font-weight: bold;
+}
+.popped-page .short span {
+  font-size: 1.5em;
+}
+/* Colours (5 PROJECT PAGES)
+********************************************/
+/* background-color */
+.blindfold-page {
+  background-color: #232323; /* dark grey */
+}
+.playreality-page {
+  background-color: #336666; /* warm blue */
+}
+.popped-page {
+  height: 100%;
+  background: linear-gradient(90deg, #6699cc 50%, #E37987 50%); /* cyan, pink */
+}
+.reverie-page {
+  background-color: #310100; /* deep red */
+}
+.rise-page {
+  background-color: black; /* warm blue */
+}
+/* text & links - white */
+.blindfold-page .container,
+.playreality-page .container,
+.reverie-page .container,
+.rise-page .container {
+  color: white;
+}
+.blindfold-page a,
+.playreality-page a,
+.reverie-page a,
+.rise-page a {
+  color: white;
+}
+.blindfold-page a:hover,
+.playreality-page a:hover,
+.reverie-page a:hover,
+.rise-page a:hover {
+  color:#A9A9A9;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* TEACE.ca */
+.playreality-page .header a {
+  color: #FB7401; /* orange */
+}
+.rise-page .header a {
+  color: #7E2322; /* muted red */
+}
+.popped-page .header a {
+  color: #6699cc; /* blue/cyan */
+}
+@media only screen and (max-width : 450px) {
+.popped-page .header a {
+    color: black;        
+  } 
+}
+.popped-page .header a:hover {
+  color: purple;
+}
+/* Summary (3 PROJECT PAGES)
+********************************************/
+.summary {
+  margin: 0 auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 1.25em;
+  font-family: "Cardo", serif;
+  max-width: 521px;
+}
+.summary p {
+  margin-top: 0.5em;
+}
+.playreality-page .summary {
+  margin-top: 0em;
+  font-family: "Advent Pro", sans-serif;
+}
+
+@media only screen and (max-width : 530px) {
+  .playreality-page .summary {
+    max-width: 256px;
+  }
+}
+@media only screen and (min-width : 530px) {
+  .playreality-page .summary {
+    max-width: 400px;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .playreality-page .summary {
+    max-width: 630px;
+  }
+}
+/* Watch (2 PROJECT PAGES)
+********************************************/
+.watch h2 {
+  font-size: 1.5em;
+  margin-top: 1.5em;
+}
+.playreality-page .watch h2 {
+  margin-top: 1em;
+}
+.watch p {
+  font-size: 1.25em;
+}
+.watch #red {
+  color: red;
+}
+.watch #blue {
+  color: blue;
+}
+.watch #green {
+  color: green;
+}
+@media only screen and (max-width : 530px) {
+  .watch iframe {
+    height: 146.3px;
+    width: 256px;
+  }
+}
+@media only screen and (min-width : 530px) {
+  .watch h2 {
+    clear: both;
+    margin-top: 8em;
+  }
+  .watch iframe {
+    height: 228.6px;
+    width: 400px;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .watch iframe {
+    height: 360px;
+    width: 630px;
+  }
+}
+
+
+/* INDEX.HTML ONLY
+**************************************************************************/
+/* Menu
+********************************************/
+.menu {
+  margin-top: 0.5em;
+  clear:both;
+}
+.menu li {
+  display: block;
+  margin-top: 0.2em;
+  font-size: 1.5em;
+}
+@media only screen and (min-width : 768px) { 
+  .menu li {
+    display: inline-block;
+    font-size: 1.9em;
+    margin-left: 0.44em;
+  }
+}
+@media only screen and (min-width : 1024px) { 
+  .menu li {
+    font-size: 2em;
+    margin-left: 1.25em;
+  }
+}
+/* Scroll Pane
+********************************************/
+/* general */
+.scroll-pane {
+  height: 23.5em;
+  margin-top: 1em;  
+}
+.jspArrow {       /* over-riding jquery.jscrollpane.css here */
+  background-color: white;
+}
+.jspArrow.jspDisabled {  /* over-riding jquery.jscrollpane.css here */
+  background-color: white;
+}
+@media only screen and (max-width : 320px) { 
+  .jspArrow {  
+    padding-left: 2em; 
+  }
+}
+@media only screen and (min-width : 320px) { 
+  .jspArrow {  
+    padding-left: 2em;
+  }
+}
+@media only screen and (min-width : 450px) {
+  .jspArrow {  
+    padding-left: 6em; 
+  }
+}
+@media only screen and (min-width : 768px) {
+  .jspArrow {  
+    padding-left: 14em; 
+  }
+}
+/* inner */
+.inner {
+  width: 1100px;  /* has to be in px else shows vertical scroll bar in em */
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1024px) {
+  .inner {
+    padding-left: 90px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .inner {
+    padding-left: 120px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .inner {
+    padding-left: 200px;
+  }
+}
+/* image transition */
+ul#images {
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+ul#images li {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  float: left;
+  width: 100px; /* how much width of pic showed at rest */
+  height: 346px; /* has to match pic height */
+}
+
+
+/* BLINDFOLD ONLY
+**************************************************************************/
+/* blindfold icons */
+.blindfold-icons li {
   font-size: 2.5em;
   vertical-align: middle;
   position: relative;
   margin-top: 0.5em;
 }
-.blindfold-page .icons li:last-child { /* helps to centre cover icons */
-  width: 1.6em;
+.blindfold-icons li:last-child { /* helps to centre cover icons */
+  width: 1.8em;
+  height: 0.85em;  
 }
 .IMDb-icon {
   position: absolute;
-  height: 1.1em;
-  top: -5%;
-  left: -5%;
-  opacity: 0.8;
+  top: -35%;
+  left: -18%;
+  height: 1.25em;
+  opacity: 1;
 }
 .IMDb-icon:hover {
-  opacity: 1;
+  opacity: 0.8;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
 }
-.cover-large {   /* poster image */
-  width: 100%;
-  max-width: 370px;
-  border: 1px dotted red;
-}
+/* cover & do-now */
 .do-now li { 
   display: inline-block;   
 }
@@ -337,12 +581,12 @@ ul#images li {
   -o-transition: all 1s;
   transition: all 1s;
 }
-@media only screen and (min-width : 365px) {  /* different */
+@media only screen and (min-width : 365px) {
   .do-now img {
     height: 4.2em;
   }
 }
-@media only screen and (min-width : 530px) { /* different */
+@media only screen and (min-width : 530px) {
   .do-now {
     position: relative;
     margin-top: -20em;
@@ -355,185 +599,56 @@ ul#images li {
     height: 4.2em;  
   }
 }
-/* content  */
-.watch h2, .listen h2 {
-  font-size: 1.5em;
-  margin-top: 0.5em;
-}
-/* .watch  */
-.watch p {
-  font-size: 1.25em;
-}
-.watch #red {
-  color: red;
-}
-.watch #blue {
-  color: blue;
-}
-.watch #green {
-  color: green;
-}
 /* .listen  */
+.listen h2 {
+  font-size: 1.5em;
+  margin-top: 1.5em;
+}
 .listen img, .listen iframe {
   width: 100%;
   max-width: 400px;
 }
-/* .read  */
-.read-title {
-  border: 1px dashed red;
-  font-size: 1.5em;
-  margin-top: 0.5em;
-}
+/* .download & .first  */
 .download a {
   font-family: "Advent Pro", sans-serif;
   font-size: 1.25em;
   float: right;
 }
-@media only screen and (max-width : 530px) {  /* orange */
-  .watch iframe {
-    height: 146.3px;
-    width: 256px;
-  }
+@media only screen and (max-width : 530px) {
   .first {
     padding-top: 2em;
   }
-  .playreality-page .summary {
-    max-width: 256px;
-  }
 }
-@media only screen and (min-width : 530px) {  /* orange */
-  .watch h2 {
-    clear: both;
-    border: 1px dashed green;
-    margin-top: 6.5em;
-  }
-  .watch iframe {
-    height: 228.6px;
-    width: 400px;
-  }
+@media only screen and (min-width : 530px) {
   .first {
     padding-top: 4em;
   }
-  .playreality-page .summary {
-    max-width: 400px;
-  }
-}
-@media only screen and (min-width : 768px) { /* red */
-  .watch iframe {
-    height: 360px;
-    width: 630px;
-  }
-  .playreality-page .summary {
-    max-width: 630px;
-  }
-}
-/* .summary  */
-.summary {
-  border: 1px dotted red;
-  margin: 0 auto;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  font-size: 1.25em;
-  font-family: "Cardo", serif;
-  max-width: 521px;
-}
-.summary p {
-  margin-top: 0.5em;
-}
-/* .buy-now  */
-@media only screen and (min-width : 630px) {  /* different */
-  .reverie-page .buy-now img, .playreality-page .buy-now img {  
-    margin-top: 12em;
-    margin-left: -3em;
-    border: 2px dashed green;
-  }
 }
 
-/* COLORS (most .html)
-*************************************/
-.reverie-page {
-  background-color: #310100; /* deep red  */
-}
-.blindfold-page {
-  background-color: #232323; /* dark grey  */
-}
-.playreality-page {
-  background-color: #336666; /* warm blue  */
-}
-.rise-page {
-  background-color: black; /* warm blue  */
-}
-.reverie-page .container, .blindfold-page .container, .playreality-page .container, .rise-page .container  {
-  color: white;
-}
-.reverie-page a, .blindfold-page a, .playreality-page a, .rise-page a {
-  color: white;
-}
-.reverie-page a:hover, .blindfold-page a:hover, .playreality-page a:hover, .rise-page a:hover {
-  color:#A9A9A9;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-/* POPPED CULTURE (popped.html)
-*************************************/
-.popped-page {
-  height: 100%;
-    background: linear-gradient(90deg, #6699cc 50%, #E37987 50%); /* cyan, pink */
-}
-@media only screen and (min-width : 630px) {  /* different */
-  .popped-page .cover-large {
-    display: block;
-    margin: 0 auto;
-  }
-  .popped-page .buy-now img {
-    margin-top: -12em;
-    margin-left: 18em;
-  }
-}
-.popped-page .short p {
-  font-weight: bold;
-}
-.popped-page .short span {
-  font-size: 1.5em;
-}
-/* PLAY REALITY (playreality.html)
-*************************************/
-.stable-banner {
-  border: 1px dashed green;
-}
+
+/* PLAY REALITY & CONTACT.html
+**************************************************************************/
 .stable-banner img {
   margin-top: 1.5em;
   clear:both;
   width: 100%;
-  max-width: 400px;
+  max-width: 432px; /* to match max width of .cover-large img */
 }
-@media only screen and (min-width : 530px) {  /* orange */
-  .stable-banner img {
+@media only screen and (min-width : 530px) {
+  .playreality-page .stable-banner img {
     clear: both;
-    border: 1px dashed green;
     margin-top: 16em;
-  }
+  }  
 }
-.playreality-page .watch h2 {
-  border: 1px dashed green;
-  margin-top: 1em;
-}
-.playreality-page .summary {
-  border: 1px dashed green;
-  margin-top: 0em;
-  font-family: "Advent Pro", sans-serif;
-}
-/* RISE PAGE (rise.html)
-*************************************/
 
-.cover-flat {   /* poster image */
+
+/* RISE PAGE ONLY
+**************************************************************************/
+.cover-flat {
   width: 100%;
   max-width: 521px;
-  border: 1px dotted white;
 }
-@media only screen and (min-width : 790px) {  /* different */
+@media only screen and (min-width : 790px) {
   .rise-page .cover-flat {
     display: block;
     margin: 0 auto;
@@ -541,7 +656,6 @@ ul#images li {
   .rise-page .buy-now img {
     margin-top: -12em;
     margin-left: 25em;
-    border: 1px dotted white;
   }
 }
 .radioactive h2 {
@@ -550,13 +664,7 @@ ul#images li {
 .radioactive #start-hidden p {
   display: inline;
 }
-.rise-page .read {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  border: 1px solid white;
-}
-/* LOADER (rise.html)
-*************************************/
+/* .loader */
 .loader {
   position: relative;
   margin: 0px auto;
@@ -657,38 +765,5 @@ color {  100%, 0% {
  stroke: yellow;
 }
 }
-
-
-
-
-@media only screen and (max-width : 320px) { 
-  body {
-    border: 3px dotted yellow; /* Smartphones (portrait) ----------- */
-  }
-}
-@media only screen and (min-width : 320px) { 
-  body {
-    border: 3px dotted orange; /* Smartphones (landscape) ----------- */
-  }
-}
-@media only screen and (min-width : 768px) {
-  body {
-    border: 3px dotted red; /* iPads (landscape) ----------- */
-  }
-}
-@media only screen and (min-width : 1024px) {
-  body {
-    border: 3px dotted purple; /* iPads (portrait) ----------- */
-  }
-}
-@media only screen and (min-width : 1224px) { 
-  body {
-    border: 3px dotted blue; /* Desktops and laptops ----------- */
-  }
-}
-
-
-
-
 
 
