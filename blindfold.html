@@ -1,23 +1,22 @@
 <!DOCTYPE HTML>
-<html lang='en'>
+<html lang="en">
 
 <head>
-  <meta http-equiv='content-type' content='text/html; charset=UTF-8' />  
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />  
   <title>TEACE.ca | Teace Snyder | Official Website</title>
-  <meta name='description' content='TEACE.ca features the project portfolio of the writer, director and producer Teace Snyder.' />
-  <link rel='shortcut icon' type='image/x-icon' href='images/logo.png' />
+  <meta name="description" content="TEACE.ca features the project portfolio of the writer, director and producer Teace Snyder." />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
 
-  <meta name='viewport' content='width=device-width, initial-scale=1' />     
+  <meta name="viewport" content="width=device-width, initial-scale=1" />     
  
   <!-- STYLES -->
-  <link rel='stylesheet' type='text/css' href='css/reset.css' media='all' />
-  <link rel='stylesheet' type='text/css' href='css/jquery.jscrollpane.css' media='all' />
-  <link rel='stylesheet' type='text/css' href='css/style.css' media='all' />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
   
 
   <!-- FONTS -->
-  <link href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Advent+Pro|Cardo' rel='stylesheet' type='text/css'>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Cardo" rel="stylesheet" type="text/css">
   
   <!-- SCRIPTS -->
   <!-- modernizr enables HTML5 elements and feature detects -->
@@ -40,17 +39,28 @@
 </head>
 
 <body>
+
+  <!-- facebook sharing icons -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
   <div class="blindfold-page">
   <div class="container">
     
     <!-- HEADER -->
     <div class="header"> 
-      <a class="cliche" href="index.html"><img src="images/logo2-grey.png" alt="eye logo" /></a>
+      <a class="cliche" href="index.html"><img src="images/logo-grey.png" alt="Original Cliche Entertainment logo" /></a>
       <a class="teace" href="index.html">TEACE.ca</a>
     </div> 
 
     <!-- Blindfold-specific ICONS -->
-    <div class="icons">
+    <div class="icons blindfold-icons">
       <ul>        
         <li><a href="https://vimeo.com/34497756"><i class="fa fa-vimeo-square vimeo-icon"></i></a></li>
         <li><a href="https://www.youtube.com/watch?v=LJsOqfStGJ0&feature=youtu.be"><i class="fa fa-youtube-square youtube-icon"></i></a></li>
@@ -59,19 +69,19 @@
       </ul>
     </div>
     
-    <!-- PAGE CONTENT: top --> 
+    <!-- COVER --> 
     <div class="cover">     
 
-      <img class="cover-large" src="images/projects/blindfold/blindfoldposter432.jpg" alt="x" />
+      <img class="cover-large" src="images/projects/blindfold/blindfoldposter432.jpg" alt="Blindfold poster" />
 
       <ul class="do-now">
-        <li><a href="#watch" ><img src="images/watch-now.png" alt="x" /></a><li>
-        <li><a href="#read" ><img src="images/read-now.png" alt="x" /></a></li>   
-        <li><a href="#listen" ><img src="images/listen-now.png" alt="x" /></a></li>
+        <li><a href="#watch" ><img src="images/watch-now.png" alt="watch now button" /></a><li>
+        <li><a href="#read" ><img src="images/read-now.png" alt="read now button" /></a></li>   
+        <li><a href="#listen" ><img src="images/listen-now.png" alt="listen now button" /></a></li>
       </ul>
-    </div> <!-- end cover -->
+    </div> <!-- /end .cover -->
     
-    <!-- Watch the movie -->
+    <!-- WATCH -->
     <div class="watch" id="watch">
       <h2>Watch Blindfold</h2>
       <iframe src="https://player.vimeo.com/video/34497756" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -79,21 +89,21 @@
       <p>Also available on <a href="https://www.youtube.com/watch?v=LJsOqfStGJ0&feature=youtu.be">YouTube</a>.</p>
     </div>
 
-    <!-- corbett report podcast -->
+    <!-- LISTEN -->
     <div class="listen" id="listen">
       <h2>Featured Interview On The Corbett Report</h2>
-      <p><a href="https://www.corbettreport.com/corbett-report-radio-104-removing-the-911-blindfold-with-teace-snyder/"><img src="images/corbett.jpg" alt="Corbett icon"></a></p>
+      <p><a href="https://www.corbettreport.com/corbett-report-radio-104-removing-the-911-blindfold-with-teace-snyder/"><img src="images/corbett.jpg" alt="Corbett Report icon"></a></p>
       <iframe width="400" height="24" src="https://www.corbettreport.com/?powerpress_embed=4387-podcast&amp;powerpress_player=default" frameborder="0" scrolling="no"></iframe>
     </div>
     
 
-    <!-- read the story -->
+    <!-- READ -->
     <div class="read" id="read">
       <h2 class="read-title">Read The Original Short Story</h2>
       <div class="shorts">
       <div class="short">
         <h2>Click To Read</h2>
-        <img class="click-to-read" src="images/projects/blindfold/blindfoldbanner.jpg" alt="x" />
+        <img class="click-to-read" src="images/projects/blindfold/blindfoldbanner.jpg" alt="Blindfold banner" />
         <div id="start-hidden">
 <p class="download"><a href="bfold.pdf" download>Or click for the pdf</a></p>
 <p class="first">Eve sat at her desk, lazily twirling a pen with her pinkie. Her classmates played
@@ -562,24 +572,42 @@ had her.</p>
       </div> <!-- /end .shorts -->
     </div> <!-- /end .read -->
 
+    <!-- SHARE ICONS -->
+    <div class="share-icons">     
+      <ul>
+        <li> <!-- facebook follow -->
+          <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2FOriginalClicheEntertainment&width=74&height=21&layout=button&size=large&show_faces=false&appId" width="78" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </li> 
+        <li> <!-- facebook like & share-->
+          <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FOriginalClicheEntertainment%2F&width=120&layout=button&action=like&size=large&show_faces=false&share=true&height=28&appId" width="120" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </li>
+        <li> <!-- twitter follow -->
+          <a class="twitter-follow-button" href="https://twitter.com/teacesnyder" data-show-count="false" data-size="large">Follow @teacesnyder</a>
+        </li>
+        <li> <!-- twitter share -->
+          <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Watch" data-via="teacesnyder" data-hashtags="holdmethemovie & #blindfold" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> 
+        </li>
+      </ul>
+    </div> <!-- /end .share-icons -->
+
 
     <!-- FOOTER -->
     <div class="footer">
 
       <ul class="icons">
-        <li><a href="https://www.facebook.com/OriginalClicheEntertainment/"><i class="fa fa-facebook-square facebook-icon"></i></a></li>
-        <li><a href="https://twitter.com/teacesnyder"><i class="fa fa-twitter-square twitter-icon"></i></a></li>
-        <li><a href="https://vimeo.com/user5902888"><i class="fa fa-vimeo-square vimeo-icon"></i></a></li>
-        <li><a href="https://www.youtube.com/user/teacesnyder"><i class="fa fa-youtube-square youtube-icon"></i></a></li>
-        <li><a href="http://teacesnyder.blogspot.com/"><i class="fa fa-book book-icon"></i></a></li>
+        <li><a href="https://www.facebook.com/OriginalClicheEntertainment/" target="_blank"><i class="fa fa-facebook-square facebook-icon"></i></a></li>
+        <li><a href="https://twitter.com/teacesnyder" target="_blank"><i class="fa fa-twitter-square twitter-icon"></i></a></li>
+        <li><a href="https://vimeo.com/user5902888" target="_blank"><i class="fa fa-vimeo-square vimeo-icon"></i></a></li>
+        <li><a href="https://www.youtube.com/user/teacesnyder" target="_blank"><i class="fa fa-youtube-square youtube-icon"></i></a></li>
+        <li><a href="http://teacesnyder.blogspot.com/" target="_blank"><i class="fa fa-book book-icon"></i></a></li>
       </ul>
       
       <p class="bigger">© 2016. <strong>Original Clich&#233 Entertainment Inc.</strong></li>
       <p>Website by <a href="http://www.barboradoslikova.com/">Barbora Doslikova.<p>
   
-    </div> <!-- /end .footer --> 
+    </div> <!-- /end .footer -->
 
-    <!-- STICKY TO THE TOP BUTTON -->
+    <!-- STICKY GO TO THE TOP BUTTON -->
     <a href="#" class="go-top"> 
       <i class="fa fa-arrow-circle-up"></i>
     </a>
@@ -587,6 +615,25 @@ had her.</p>
   </div> <!-- /end .container -->    
   </div> <!-- /end .index-page -->
   
+  <!-- twitter sharing icons -->
+  <script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+   
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+   
+    return t;
+  }(document, "script", "twitter-wjs"));</script>
+
+  <!-- go to top sticky button -->
   <script> 
     $(document).ready(function() {
       // Show or hide the sticky footer button

@@ -1,23 +1,22 @@
 <!DOCTYPE HTML>
-<html lang='en'>
+<html lang="en">
 
 <head>
-  <meta http-equiv='content-type' content='text/html; charset=UTF-8' />  
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />  
   <title>TEACE.ca | Teace Snyder | Official Website</title>
-  <meta name='description' content='TEACE.ca features the project portfolio of the writer, director and producer Teace Snyder.' />
-  <link rel='shortcut icon' type='image/x-icon' href='images/logo.png' />
+  <meta name="description" content="TEACE.ca features the project portfolio of the writer, director and producer Teace Snyder." />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
 
-  <meta name='viewport' content='width=device-width, initial-scale=1' />     
+  <meta name="viewport" content="width=device-width, initial-scale=1" />     
  
   <!-- STYLES -->
-  <link rel='stylesheet' type='text/css' href='css/reset.css' media='all' />
-  <link rel='stylesheet' type='text/css' href='css/jquery.jscrollpane.css' media='all' />
-  <link rel='stylesheet' type='text/css' href='css/style.css' media='all' />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
   
 
   <!-- FONTS -->
-  <link href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Advent+Pro|Cardo' rel='stylesheet' type='text/css'>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Cardo" rel="stylesheet" type="text/css">
   
   <!-- SCRIPTS -->
   <!-- modernizr enables HTML5 elements and feature detects -->
@@ -28,51 +27,53 @@
 
   <!-- latest jQuery direct from google's CDN -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-  <script>
-    $(document).ready(function(){
-        $(".click-to-read").click(function(){
-            $(this).next().toggle();
-        });
-    });
-  </script>
   
 </head>
 
 <body>
+
+  <!-- facebook sharing icons -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
   <div class="playreality-page">
   <div class="container">
     
     <!-- HEADER -->
     <div class="header"> 
-      <a class="cliche" href="index.html"><img src="images/logo2-orangeblue.png" alt="eye logo" /></a>
+      <a class="cliche" href="index.html"><img src="images/logo-orangeblue.png" alt="Original Cliche Entertainment logo" /></a>
       <a class="teace" href="index.html">TEACE.ca</a>
     </div> 
     
-    <!-- PAGE CONTENT: top --> 
+    <!-- COVER --> 
     <div class="cover">
       
-      <a href="https://www.lulu.com/shop/search.ep?contributorId=273176"><img class="cover-large" src="images/projects/playreality/playrealitycover.jpg" alt="x" /></a>
+      <a href="https://www.lulu.com/shop/search.ep?contributorId=273176"><img class="cover-large" src="images/projects/playreality/playrealitycover.jpg" alt="Play Reality book cover" /></a>
       
       <ul class="do-now">
-        <li><a href="http://playreality.ca/" ><img src="images/go-main.png" alt="x" /></a><li>
-        <li><a href="#media-press" ><img src="images/media-press.png" alt="x" /></a></li>   
+        <li><a href="http://playreality.ca/" ><img src="images/go-main.png" alt="go to the main site button" /></a><li>
+        <li><a href="#media-press" ><img src="images/media-press.png" alt="media and press button" /></a></li>   
       </ul>           
-    </div> <!-- end cover -->
+    </div> <!-- /end .cover -->
 
+    <!-- STABLE BANNER --> 
     <div class="stable-banner">
-      <img src="images/projects/playreality/playrealitybanner.jpg" alt="x" />
+      <img src="images/projects/playreality/playrealitybanner.jpg" alt="Play Reality banner" />
     </div>
 
-    <!-- Watch the interview -->
+    <!-- WATCH -->
     <div class="watch" id="media-press">
       <h2>Media And Press</h2>
       <iframe src="https://www.youtube.com/embed/NgC95EyuJcQ" frameborder="0" allowfullscreen></iframe>
-      <p>An interview with the authors.</p>
     </div>
 
-    <!-- summary -->
+    <!-- SUMMARY -->
     <div class="summary">
       <p><a href="http://www.inretrospectpodcast.com/2012/07/content/digital-wanderlust-how-videogames-are-changing-everything-an-interview-with-dr-jayne-gackenbach-and-teace-snyder/">&bull; Digital Wanderlust: How Videogames are Changing Everything: An Interview with Dr. Jayne Gackenbach and Teace Snyder</a></p>
 
@@ -86,20 +87,35 @@
 
       <p><a href="https://www.youtube.com/watch?v=33Q5_u-xIRY">&bull; Play Reality CTV news segment</a></p>
 
-    </div>
+    </div> <!-- /end .summary -->
 
-
-
+    <!-- SHARE ICONS -->
+    <div class="share-icons">     
+      <ul>
+        <li> <!-- facebook follow -->
+          <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2FOriginalClicheEntertainment&width=74&height=21&layout=button&size=large&show_faces=false&appId" width="78" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </li> 
+        <li> <!-- facebook like & share-->
+          <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FOriginalClicheEntertainment%2F&width=120&layout=button&action=like&size=large&show_faces=false&share=true&height=28&appId" width="120" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </li>
+        <li> <!-- twitter follow -->
+          <a class="twitter-follow-button" href="https://twitter.com/teacesnyder" data-show-count="false" data-size="large">Follow @teacesnyder</a>
+        </li>
+        <li> <!-- twitter share -->
+          <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Watch" data-via="teacesnyder" data-hashtags="holdmethemovie & #blindfold" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> 
+        </li>
+      </ul>
+    </div> <!-- /end .share-icons -->
 
     <!-- FOOTER -->
     <div class="footer">
 
       <ul class="icons">
-        <li><a href="https://www.facebook.com/OriginalClicheEntertainment/"><i class="fa fa-facebook-square facebook-icon"></i></a></li>
-        <li><a href="https://twitter.com/teacesnyder"><i class="fa fa-twitter-square twitter-icon"></i></a></li>
-        <li><a href="https://vimeo.com/user5902888"><i class="fa fa-vimeo-square vimeo-icon"></i></a></li>
-        <li><a href="https://www.youtube.com/user/teacesnyder"><i class="fa fa-youtube-square youtube-icon"></i></a></li>
-        <li><a href="http://teacesnyder.blogspot.com/"><i class="fa fa-book book-icon"></i></a></li>
+        <li><a href="https://www.facebook.com/OriginalClicheEntertainment/" target="_blank"><i class="fa fa-facebook-square facebook-icon"></i></a></li>
+        <li><a href="https://twitter.com/teacesnyder" target="_blank"><i class="fa fa-twitter-square twitter-icon"></i></a></li>
+        <li><a href="https://vimeo.com/user5902888" target="_blank"><i class="fa fa-vimeo-square vimeo-icon"></i></a></li>
+        <li><a href="https://www.youtube.com/user/teacesnyder" target="_blank"><i class="fa fa-youtube-square youtube-icon"></i></a></li>
+        <li><a href="http://teacesnyder.blogspot.com/" target="_blank"><i class="fa fa-book book-icon"></i></a></li>
       </ul>
       
       <p class="bigger">© 2016. <strong>Original Clich&#233 Entertainment Inc.</strong></li>
@@ -107,14 +123,31 @@
   
     </div> <!-- /end .footer --> 
 
-    <!-- STICKY TO THE TOP BUTTON -->
+    <!-- STICKY GO TO THE TOP BUTTON -->
     <a href="#" class="go-top"> 
       <i class="fa fa-arrow-circle-up"></i>
     </a>
 
   </div> <!-- /end .container -->    
   </div> <!-- /end .index-page -->
-  
+
+  <!-- twitter sharing icons -->
+  <script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+   
+    t._e = [];
+    t.ready = function(f) {
+      t._e.push(f);
+    };
+   
+    return t;
+  }(document, "script", "twitter-wjs"));</script>  
    
   <script> 
     $(document).ready(function() {
