@@ -644,6 +644,10 @@ ul#images li {
   width: 100%;
   max-width: 521px;
 }
+.rise-page .summary {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 1.5em;
+}
 @media only screen and (min-width : 790px) {
   .rise-page .cover-flat {
     display: block;
